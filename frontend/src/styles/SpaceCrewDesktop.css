@@ -1,0 +1,133 @@
+@media only screen and (min-width: 601px) {
+  .desktopVersion {
+    display: flex;
+    background-image: url("/spacecrew_background.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: var(--secondary-font);
+  }
+
+  .desktopVersion h3 {
+    color: whitesmoke;
+    font-weight: lighter;
+    text-align: right;
+  }
+
+  h2 a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+
+  .Farah {
+    display: flex;
+    position: fixed;
+    right: 45%;
+    top: 9%;
+    margin-top: 1%;
+  }
+
+  .Noemie {
+    display: flex;
+    position: fixed;
+    right: 75%;
+    top: 35%;
+  }
+
+  .Thibault {
+    display: flex;
+    position: fixed;
+    left: 75%;
+    top: 66%;
+    flex-direction: row-reverse;
+  }
+
+  .Paul {
+    display: flex;
+    position: fixed;
+    top: 70%;
+    left: 15%;
+  }
+
+  .Mathieu {
+    display: flex;
+    position: fixed;
+    bottom: 15%;
+    left: 40%;
+  }
+
+  .Guest {
+    display: flex;
+    position: fixed;
+    left: 80%;
+    top: 8%;
+    flex-direction: row-reverse;
+  }
+
+  .Farah > img,
+  .Noemie > img,
+  .Thibault > img,
+  .Paul > img,
+  .Mathieu > img,
+  .Guest > img {
+    height: 5rem;
+    width: 5.6rem;
+    border-radius: 70%;
+  }
+
+  .Farah h2,
+  .Noemie h2,
+  .Thibault h2,
+  .Paul h2,
+  .Mathieu h2,
+  .Guest h2 {
+    border-bottom: solid 3px white;
+    width: 100%;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+
+  .FarahDiagonal {
+    border-bottom: solid 3px white;
+    width: 55%;
+    transform: rotate(70deg);
+    transform-origin: 54px 94px;
+  }
+
+  .NoemieDiagonal {
+    border-right: solid 3px white;
+    width: 45%;
+    transform: rotate(-40deg);
+    transform-origin: 81px 34px;
+  }
+
+  .ThibaultDiagonal {
+    border-left: solid 3px white;
+    width: 15%;
+    transform: rotate(-17deg);
+    transform-origin: -235px -12px;
+  }
+
+  .PaulDiagonal {
+    border-right: solid 3px white;
+    width: 13%;
+    transform: rotate(19deg);
+    transform-origin: 243px 9px;
+  }
+
+  .MathieuDiagonal {
+    border-right: solid 3px white;
+    width: 20%;
+    transform: rotate(19deg);
+    transform-origin: 250px -50px;
+  }
+
+  .GuestDiagonal {
+    border-right: solid 3px white;
+    width: 13%;
+    transform: rotate(20deg);
+    transform-origin: -146px 35px;
+  }
+}

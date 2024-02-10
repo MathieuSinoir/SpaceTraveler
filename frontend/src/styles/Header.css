@@ -1,0 +1,161 @@
+header {
+  border-bottom: 0.1rem solid gray;
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header img {
+  width: 50px;
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--website-title-font);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  font-family: var(--primary-font);
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  padding-top: 60px;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.sidenav.open {
+  left: 0;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.sidenav button {
+  background-color: black;
+  color: white;
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+li:hover a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  font-size: 18px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#openBtn {
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  padding: 10px;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.burger-icon span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
+
+.desktopNav {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .burger-icon,
+  .sidenav,
+  .open {
+    display: none;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .desktopNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .logo-container h1 {
+    width: 100%;
+    text-align: left;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  header img {
+    margin-right: 2rem;
+  }
+}

@@ -1,0 +1,156 @@
+.CardStyle {
+  width: 56%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #141111;
+  margin-bottom: 10%;
+  border-radius: 9%;
+}
+
+.AllCardStyle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 4%;
+}
+
+.CardStyle p {
+  width: 100%;
+  display: flex;
+  font-family: var(--primary-font);
+}
+
+.CardStyle > a {
+  margin-bottom: 10%;
+}
+
+.ZoomEffect {
+  height: 218px;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  border: 1px solid #ffffff;
+  border-radius: 9%;
+}
+
+.ZoomEffect img {
+  width: 218px;
+  border-radius: 10%;
+  transition: transform 0.5s ease;
+  border-radius: 9%;
+}
+
+.ZoomEffect:hover img {
+  transform: scale(1.1);
+}
+
+.TextCard h2,
+p {
+  text-align: center;
+}
+
+.TextCard h2 {
+  font-family: var(--secondary-font);
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  margin-right: 0.5rem;
+}
+
+.SpaceShipButton {
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.SpaceShipImage {
+  width: 3rem;
+  rotate: 180deg;
+}
+
+@media only screen and (min-width: 600px) {
+  .CardStyle {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141111;
+    margin-bottom: 0%;
+    border-radius: 9% 0% 0% 9%;
+  }
+
+  .AllCardStyle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  .AllCardStyle a {
+    align-items: center;
+  }
+
+  .TextCard {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .TextCard > h2 {
+    font-size: 190%;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .TextCard > p {
+    font-size: 120%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .CardStyle > p {
+    width: 70%;
+    font-size: larger;
+    display: flex;
+  }
+
+  .CardStyle > a {
+    margin: 0;
+  }
+
+  .ZoomEffect {
+    width: 20%;
+    height: 218px;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    border: 1px solid #ffffff;
+  }
+
+  .ZoomEffect img {
+    width: 218px;
+    border-radius: 10%;
+    transition: transform 0.5s ease;
+  }
+
+  .ZoomEffect:hover img {
+    transform: scale(1.1);
+  }
+
+  .ButtonContainer {
+    width: 0;
+    margin: 0;
+  }
+
+  .SpaceShipImage {
+    width: 4rem;
+    rotate: 90deg;
+    margin-right: 2rem;
+    cursor: url("../assets/cursor_click.png"), auto;
+  }
+}

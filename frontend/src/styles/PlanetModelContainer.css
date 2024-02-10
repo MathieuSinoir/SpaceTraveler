@@ -1,0 +1,23 @@
+.modelInterfaceContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.tuto {
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+}
+
+.tuto p {
+  margin-right: 1rem;
+  font-family: var(--secondary-font);
+  text-align: right;
+}
+.returnButtonPlanetModelContainer {
+  width: 80px;
+  rotate: -90deg;
+  margin: 2rem;
+}

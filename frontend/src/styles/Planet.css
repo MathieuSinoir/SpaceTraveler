@@ -1,0 +1,145 @@
+.returnbtn {
+  width: 15%;
+  height: 15%;
+  margin: 2%;
+  transform: rotate(0.75turn);
+  cursor: url("../assets/cursor_click.png"), auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.visualbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.planetImg {
+  width: 50%;
+  height: 20%;
+}
+
+.btnmodel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 3.5rem;
+  background-color: darkcyan;
+  border-radius: 25px;
+  border: none;
+  margin: 5%;
+}
+
+.btnmodel a {
+  color: white;
+  font-weight: bold;
+  font-family: var(--primary-font);
+}
+
+.btnmodel a:hover {
+  cursor: url("../assets/cursor_click.png"), auto;
+}
+
+.boxdesc {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  font-family: var(--secondary-font);
+}
+
+.planetTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 3rem;
+  font-family: var(--primary-font);
+  color: white;
+  background: linear-gradient(to top, cyan, black);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: solid lightgray;
+  border-radius: 0px 0px 15px 15px;
+  width: 80%;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.alignbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.rowbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.informations {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  line-break: strict;
+}
+
+h3 {
+  color: darkcyan;
+}
+
+@media only screen and (min-width: 600px) {
+  .returnbtn {
+    width: 5%;
+    height: 1%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .visualbox {
+    width: 50%;
+    height: 100%;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .planetImg {
+    margin: 0;
+  }
+
+  .boxdesc {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .btnmodel {
+    width: 50%;
+  }
+
+  .rowbox {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
